@@ -23,9 +23,8 @@ Realizar login
 
 Gerar Empresa
     ${corporateName}=        Gerar nome da empresa
-    ${registerCompany}=      Gerar Matriz da empresa
+    ${registerCompany}=      Gera cnpj da empresa
     ${mail}=                 Set Variable   ${corporateName.lower()}@qacoders.com
-    ${matriz}=               Gerar matriz da Empresa
     ${firstName}=            Gerar primeiro nome nao composto
     ${lastName}=             Gerar ultimo nome nao composto
     ${responsibleContact}=    Set Variable    ${firstName} ${lastName}
@@ -43,7 +42,7 @@ Gerar Empresa
     Set Suite Variable       ${COMPANY_NAME}          ${corporateName}
     Set Suite Variable       ${REGISTER_COMPANY}      ${registerCompany}
     Set Suite Variable       ${MAIL}                  ${mail}
-    Set Suite Variable       ${MATRIZ}                ${matriz}
+    Set Suite Variable       ${MATRIZ}                teste
     Set Suite Variable       ${RESPONSIBLE_CONTACT}   ${responsibleContact}
     Set Suite Variable       ${TELEPHONE}             ${telephone}
     Set Suite Variable       ${SERVICE_DESCRIPTION}   ${serviceDescription}
@@ -129,9 +128,9 @@ Cadastrar empresa com CNPJ invalido
 
     ${body}=    Create Dictionary
     ...    corporateName=${COMPANY_NAME}
-    ...    registerCompany=${REGISTER_COMPANY}
+    ...    registerCompany=${REGISTER_COMPANY}abc
     ...    mail=${MAIL}
-    ...    matriz=${MATRIZ}abc
+    ...    matriz=${MATRIZ}
     ...    responsibleContact=${RESPONSIBLE_CONTACT}
     ...    telephone=${TELEPHONE}
     ...    serviceDescription=${SERVICE_DESCRIPTION}

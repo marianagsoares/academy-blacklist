@@ -42,7 +42,7 @@ Gerar nome da empresa
 
     RETURN    ${s_COMPANY_NAME}
     
-Gerar matriz da empresa
+Gera cnpj da empresa
     [Documentation]    Gera um cnpj valido
     ${randomString}=    Generate Random String    14    [NUMBERS]
     ${matriz}=    Set Variable    ${randomString}
