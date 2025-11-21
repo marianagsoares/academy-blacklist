@@ -16,3 +16,12 @@ Cenario 01: Cadastrar Novo Cliente com Sucesso
     Verificar Elemento Cadastros Visivel
     Acessar Pagina Clientes
     Cadastrar Novo Cliente
+
+Cenario 02: Editar cliente com sucesso
+    [Documentation]    Realiza login, navega até Clientes e atualiza um cliente ja cadastrado
+
+    Realizar Login
+    Verificar Redirecionamento Para Home
+    Verificar Elemento Cadastros Visivel
+    Acessar Pagina Clientes
+    Editar cliente

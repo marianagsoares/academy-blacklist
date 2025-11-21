@@ -2,7 +2,6 @@
 Library    SeleniumLibrary
 Resource    ../config/dev.robot
 
-
 *** Keywords ***
 Realizar Login
     Wait Until Element Is Visible    id:email    timeout=10s
