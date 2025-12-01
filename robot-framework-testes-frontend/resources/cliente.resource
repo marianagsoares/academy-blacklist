@@ -30,6 +30,8 @@ Cadastrar Novo Cliente
     Wait Until Element Is Visible    xpath://button[text()='Salvar']    timeout=10s
     Click Button    xpath://button[text()='Salvar']
 
+    Sleep    5s
+
 Editar cliente
     Wait Until Element Is Visible    id:edit    timeout=10s
     Click Element    id:edit
@@ -38,6 +40,8 @@ Editar cliente
 
     Wait Until Element Is Visible    xpath://button[text()='Salvar']    timeout=10s
     Click Button    xpath://button[text()='Salvar']
+
+    Sleep    5s
 
 Preencher Formulario Cliente
     ${dados_cliente}=    Gerar Cliente

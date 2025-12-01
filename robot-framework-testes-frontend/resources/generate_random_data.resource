@@ -57,3 +57,33 @@ Gerar Cliente
         
     RETURN    ${cliente_dados}
 
+
+Gerar Empresa
+    [Documentation]    Gera dados de empresa aleatórios através da API 4devs
+
+    # Criar dicionário com os dados da empresa
+    ${empresa_dados}=    Create Dictionary
+    ...    razao_social=Rita e Lucas Alimentos ME
+    ...    nome_fantasia=Rita e Lucas Alimentos ME
+    ...    email=faleconosco@ritaelucasalimentosme.com.br
+    ...    cnpj=34575708000192
+    ...    telefone=1137497251
+    ...    nome_responsavel=joana
+    ...    descricao=servicos de tecnologia
+    ...    cep=06814275
+    ...    pais=Brasil
+    ...    estado=SP
+    ...    bairro=Jardim Jurema
+    ...    rua=Rua Augusto de Almeida Batista
+    ...    numero_imovel=177
+    ...    complemento=complemento empresa
+    ...    cidade=Sao Paulo
+
+
+    RETURN    ${empresa_dados}
+
+Gerar Departamento Da Lista
+    ${departamentos}=    Create List    Financeiro    RH    TI    Vendas    Marketing    Operações
+    ${dept}=    FakerLibrary.Random Element    ${departamentos}
+    Log    ${dept}
+    RETURN    ${dept}

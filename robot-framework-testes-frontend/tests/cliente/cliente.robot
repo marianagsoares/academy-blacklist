@@ -8,14 +8,15 @@ Test Teardown    Fechar Navegador
 
 *** Test Cases ***
 
-Cenario 01: Cadastrar Novo Cliente com Sucesso
-    [Documentation]    Realiza login, navega até Clientes e cadastra um novo cliente com dados aleatórios
-    
+
+Cenario 01: Cadastrar novo cliente
+    [Documentation]    Realiza login, navega até Clientes e cadastra um novo cliente
+
     Realizar Login
     Verificar Redirecionamento Para Home
     Verificar Elemento Cadastros Visivel
     Acessar Pagina Clientes
-    Cadastrar Novo Cliente
+    Cadastrar Novo Cliente  
 
 Cenario 02: Editar cliente com sucesso
     [Documentation]    Realiza login, navega até Clientes e atualiza um cliente ja cadastrado

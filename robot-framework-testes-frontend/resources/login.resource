@@ -12,6 +12,7 @@ Realizar Login
 
     Wait Until Element Is Visible    id:login    timeout=10s
     Click Button    id:login
+    
 
 Verificar Redirecionamento Para Home
     Wait Until Location Is    ${BASE_URL_UI}/home    timeout=10s
